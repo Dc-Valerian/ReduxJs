@@ -10,10 +10,13 @@ const ReduceState = createSlice({
   reducers: {
     LoginUser:(state,actions)=>{
         state.current = actions.payload
+    },
+    logoutUser:(state)=>{
+        state.current= null
     }
   }
 });
 
-export const {LoginUser} = ReduceState.actions
+export const {LoginUser,logoutUser} = ReduceState.actions
 
 export default ReduceState.reducer

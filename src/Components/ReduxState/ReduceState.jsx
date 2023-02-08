@@ -1,9 +1,15 @@
-import React from 'react'
+import { createSlice } from '@reduxjs/toolkit'
 
-const ReduceState = () => {
-  return (
-    <div>ReduceState</div>
-  )
+const initialState = {
+
 }
 
-export default ReduceState
+const ReduceState = createSlice({
+  name: second,
+  initialState,
+  reducers: {}
+});
+
+export const {} = ReduceState.actions
+
+export default ReduceState.reducer
